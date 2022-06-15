@@ -1,0 +1,23 @@
+p.welcome-b {
+  font-size: 18px;
+  margin: 10px 0px 40px;
+}
+.login-header{
+  --background: #f7f7f7;
+}
+.otp-input {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 25%;
+  --background: var(--ion-color-medium-shade);
+  --padding-start: 10px;
+  text-align: center;
+}
+.btn-verify{
+    margin-top: 20px;
+}
+h4.header-otp {
+  margin-top: 40px;
+}

@@ -1,0 +1,132 @@
+.profile-s p {
+    font-size: 32px;
+    color: #4A4956;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  .profile-bg{
+    --background: #f7f7f7;
+  }
+  .avtar-icon {
+    // background: #ffffff;
+    // border-radius: 50%;
+    // padding: 20px;
+    // height: 165px;
+    // width: 165px;
+    // box-shadow: 0px 6px 10px #0000001a;
+    text-align: center;
+  }
+  // .avtar-icon img {
+  //     margin: 30px auto;
+  //     max-width: 200px;
+  // }
+  .profile-s {
+    text-align: left;
+  }
+  .btn-profile{
+    border-radius: 50px!important;
+    font-size: 12px;
+    text-transform: capitalize;
+    --color: #616161;
+    --background: #F2F9FE;
+  }
+  .profile-service {
+    background: #ffffff 0% 0% no-repeat;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+  .profile-service p {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0px;
+    color: #160c09;
+  }
+  .box-btn p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0c3469;
+  }
+  .profile-box {
+    border-radius: 22px;
+    width: 100%;
+    height: 35%;
+    background: #F2F9FE;
+    text-align: center;
+    padding: 10%;
+    }
+  
+  
+    .bar-header {
+        border: 0px !important;
+        border-bottom-color: transparent !important;
+        --background: linear-gradient(180deg, #F8FCFF 0%, #E1F2FE 100%) 0% 0% !important;
+        border-bottom: none !important;
+    }
+    .profile-edit {
+        padding: 30px 0px;
+    }
+    .profile-pg {
+        padding: 10px 0px;
+    }
+    h3.login-header {
+        color: #686868;
+        font-weight: bold;
+        font-size: xx-large;
+        text-align: center;
+        font-family: sans-serif;
+        margin-bottom: 10%;
+        margin-top: 0%;
+    }
+    .image-box {
+  
+      border-radius: 22px;
+      width: 100%;
+      color: #A7A7A7;
+      text-align: center;
+      padding: 4%;
+      ion-icon {
+          font-size: xx-large;
+      }
+    }
+    .image-boxss {
+  
+      border-radius: 22px;
+      width: 100%;
+      background: #f7f8fc;
+      color:#A7A7A7;
+      font-size: 17px;
+      text-align: center;
+      padding: 10%;
+      }
+  
+    //   .register-img img {
+    //     background: #ffffff;
+    //     border-radius: 50%;
+    //     padding: 50px;
+    //     height: 160px;
+    //     width: 160px;
+    //     box-shadow: -1px 0px 10px #0000001a;
+    // }
+    .register-img {
+      text-align: center;
+  }
+  .div-center {
+    text-align: center;
+  
+    .camera-icon-css {
+      position: absolute;
+      left: 45vw;
+      top: 28vh;
+      font-size: 30px;
+    }
+  }
+  .cnct-details {
+    background: #e4e4e4;
+    border-radius: 8px;
+    padding:2%;
+    width: 100%;
+    --placeholder-color: #000;
+    margin-top: 4%;
+    color: #000 !important;
+}

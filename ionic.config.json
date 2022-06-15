@@ -1,0 +1,7 @@
+{
+  "name": "vyapaarKhaata",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

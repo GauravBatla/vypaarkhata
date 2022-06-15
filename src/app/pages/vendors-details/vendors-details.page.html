@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="toolbar-css" style="--background: #f7f7f7;">
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/oppertunities" color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary">Vendors Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/registration">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col size="8">
+        <h3>Shubham International</h3>
+        <p>Email not provided</p>
+        <p>Not Provided</p>
+      </ion-col>
+      <ion-col size="4">
+        <!-- <ion-button expand="full" style="margin-top:20px;">Edit</ion-button> -->
+        <ion-button fill="outline" style="margin-top:30px;">Address</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="border-bottom:1px solid #ccc;">
+      <ion-col size="4">
+        <h3>No Payments</h3>
+        <p style="font-size:13px;">Last Payment Date</p>
+      </ion-col>
+      <ion-col size="4">
+        <h3>Not Provided</h3>
+        <p style="font-size:13px;">Payment Terms</p>
+      </ion-col>
+      <ion-col size="4">
+        <h3>dsf</h3>
+        <p style="font-size:13px;">GST Number</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-segment scrollable value="heart">
+        <ion-segment-button value="home">
+          <ion-label>Payments Done</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="heart">
+          <ion-label>Bills</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="pin">
+          <ion-label>Debit Notes</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="star">
+          <ion-label>Journal Vouchers</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="call">
+          <ion-label>Contact</ion-label>
+        </ion-segment-button>
+       
+      </ion-segment>
+    </ion-row>
+  </ion-grid>
+</ion-content>

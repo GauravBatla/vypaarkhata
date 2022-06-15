@@ -1,0 +1,31 @@
+ion-card {
+  margin: 3px 3px 18px 3px;
+  border-radius: 3px;
+
+  ion-card-content {
+    padding: 1%;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.partially-p {
+  margin-top: -12%;
+}
+
+.partially-paid-button {
+  border: 1px solid var(--ion-color-primary);
+  text-align: center;
+  color: var(--ion-color-primary);
+  border-radius: 5px;
+  padding: 2.8%;
+}
+.filter-btn{
+    height:83%;
+    --background:#fff!important;
+    --box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    
+}

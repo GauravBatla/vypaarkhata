@@ -1,0 +1,44 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="toolbar-css" style="--background: #f7f7f7;">
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/oppertunities" color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary">Payment Done</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar mode="md" placeholder="Search payment number, Vendor name"></ion-searchbar>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xl="6" offset-xl="3">
+        <ion-list style="background: transparent;">
+
+          <div class="div-css" *ngFor="let i of [1,2,3,4,5,6,7,8,9]">
+            <ion-row class="row-div-css">
+              <ion-col size="6" class="ion-align-self-center">
+                <div>
+                  <h3>Interia Promotions</h3>
+                  
+                  <p>Payment no. <b>6</b></p>
+
+                  <p><b>Jan 4, 2021</b></p>
+                 
+                </div>
+              </ion-col>
+              <ion-col size="6" class="ion-align-self-center">
+                <div>
+                  <h3>{{ 23149 | currency: 'INR' }}</h3>
+                  <p>Vendor Payment</p>
+                  <p>Unused Amount <b>{{ 0 | currency: 'INR' }}</b></p>
+                  
+                </div>
+              </ion-col>
+            </ion-row>
+
+          </div>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

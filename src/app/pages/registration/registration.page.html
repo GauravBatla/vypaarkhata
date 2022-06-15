@@ -1,0 +1,139 @@
+<ion-content class="profile-bg">
+
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col size-xl="6" offset-xl="3">
+
+        <div class="profile-service">
+          <h3 class="login-header">Register Form</h3>
+          <div class="div-center">
+            <img src="/assets/user1.png" width="149px" *ngIf="imageUrl == null" />
+            <img [src]="imageUrl" width="149px" height="149px" *ngIf="imageUrl != null" style="border-radius: 50%;" />
+            <div class="camera-icon-css">
+              <ion-icon name="camera" color="light"></ion-icon>
+            </div>
+          </div>
+          <!-- <div class="register-img">
+            <img src="/assets/user.png" width="100px" />
+          </div> -->
+          <ion-row class="profile-pg">
+            <ion-col size="12">
+              <p class="work-p">First Name</p>
+              <ion-item lines="none" class="locate-it input">
+
+                <ion-input placeholder="Enter Name"> </ion-input>
+
+              </ion-item>
+            </ion-col>
+            <ion-col size="12">
+              <p class="work-p">Last Name</p>
+              <ion-item lines="none" class="locate-it input">
+
+                <ion-input placeholder="Owner Name"> </ion-input>
+
+              </ion-item>
+            </ion-col>
+            <ion-col size="12">
+              <p class="work-p">Email Id</p>
+              <ion-item lines="none" class="locate-it input">
+
+                <ion-input placeholder="Email Id"> </ion-input>
+
+              </ion-item>
+            </ion-col>
+            <ion-col size="12">
+              <p class="work-p">Contact</p>
+              <ion-item lines="none" class="locate-it input">
+
+                <ion-input placeholder="+91 0000 0000 00"></ion-input>
+
+              </ion-item>
+            </ion-col>
+            <ion-col size="12">
+
+              <p class="work-p">Password</p>
+              <ion-item lines="none" class="locate-it input">
+
+                <ion-input placeholder="+91 0000 0000 00"></ion-input>
+
+              </ion-item>
+            </ion-col>
+
+            <!-- <ion-col size="12">
+              <p class="work-p"> Address</p>
+                <ion-item lines="none" class="locate-it input">
+
+                  <ion-input placeholder="Address"> </ion-input>
+
+                </ion-item>
+            </ion-col>
+            <ion-col size="12">
+              <p class="work-p">GST</p>
+                <ion-item lines="none" class="locate-it input">
+
+                  <ion-input placeholder="9878678989"></ion-input>
+
+                </ion-item>
+            </ion-col>
+            <ion-col size="12">
+              <p class="work-p">Pan No.</p>
+                <ion-item lines="none" class="locate-it input">
+
+                  <ion-input placeholder="Pan No."></ion-input>
+
+                </ion-item>
+            </ion-col>
+
+           </ion-row>
+
+           <ion-row>
+             <h3 style="font-weight:600;">Bank Details</h3>
+            <ion-col size="12">
+              <p class="work-p">Bank Name</p>
+                <ion-item lines="none" class="locate-it input">
+
+                  <ion-input placeholder="Pan No."></ion-input>
+
+                </ion-item>
+            </ion-col>
+            <ion-col size="12">
+              <p class="work-p">Bank Account No</p>
+                <ion-item lines="none" class="locate-it input">
+
+                  <ion-input placeholder=""></ion-input>
+
+                </ion-item>
+            </ion-col>
+            <ion-col size="12">
+              <p class="work-p">Bank IFSC Code</p>
+                <ion-item lines="none" class="locate-it input">
+
+                  <ion-input placeholder=""></ion-input>
+
+                </ion-item>
+            </ion-col>
+ -->
+
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-button type="submit" expand="block">Register Now</ion-button>
+            </ion-col>
+          </ion-row>
+
+
+
+        </div>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center ion-margin-top">
+        <p class="extra-text">Already have an account? <span routerLink="/login"
+            routerDirection="root"><u>Login</u></span></p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

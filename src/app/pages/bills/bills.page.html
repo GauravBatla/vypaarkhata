@@ -1,0 +1,64 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="toolbar-css" style="--background: #f7f7f7;">
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/oppertunities" color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary">Bills</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col size="8">
+      <ion-searchbar mode="md" placeholder="Search Invoices"></ion-searchbar>
+    </ion-col>
+    <ion-col size="2">
+      <ion-button fill="clear" class="filter-btn">
+        <ion-icon name="filter-circle-sharp"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <ion-col size="2">
+      <ion-button fill="clear" class="filter-btn">
+        <ion-icon name="calendar-number-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xl="6" offset-xl="3">
+        <ion-list style="background: transparent;">
+
+          <div class="div-css" *ngFor="let i of [1,2,3,4,5,6,7,8,9]">
+            <ion-row class="row-div-css">
+              <ion-col size="8" class="ion-align-self-center">
+                <div>
+                  <h3>Decor Enterprises</h3>
+                  <p>Date:Jan 4,2021</p>
+                  <p>Bill no:</p>
+                  <p>Due Date:Feb 3,2021</p>
+                  
+                </div>
+              </ion-col>
+              <ion-col size="4" class="ion-align-self-center ion-text-center">
+                <div class="partially-p">
+                  <h3>{{ 27000 | currency: 'INR' }}</h3>
+                  <p style="font-size:14px;">Bal: {{ 26875 | currency: 'INR' }}</p>
+                  <div class="partially-paid-button">Partially Paid</div>
+                </div>
+              </ion-col>
+              
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-button expand="full">Pay Now</ion-button>
+              </ion-col>
+            </ion-row>
+           
+          </div>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+</ion-content>

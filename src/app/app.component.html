@@ -1,0 +1,77 @@
+<ion-app>
+  <ion-menu side="start" menuId="m1" type="overlay" contentId="my-content">
+    <ion-content>
+      <div class="divStyle">
+        <ion-label (click)="onMenuClose()" style="padding: 3vw; font-size: 32px;">
+          <ion-icon name="close-outline" color="light"></ion-icon>
+        </ion-label>
+      </div>
+      <ion-item class="divStyle" style="--background: transparent;" lines="none">
+        <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" width="80" height="80"/>
+        <ion-label color="secondary" class="menu-label-top">
+          Welcome
+          <p style="color: var(--ion-color-tertiary); font-size: 22px;"><strong>vyaparkhata</strong></p>
+        </ion-label>
+      </ion-item>
+      <ion-list>
+        <ion-menu-toggle>
+         <ion-item lines="none" button routerLink="/tabs/search" >
+          <!-- <img src="assets/icon/home.png" style="width:30px;" /> -->
+            <ion-icon name="search" slot="start"></ion-icon>
+            <ion-label class="menu-label">Search Jobs</ion-label>
+          </ion-item>
+         <ion-item lines="none" button routerDirection="root" (click)="openModal('complaints')">
+            <img src="assets/icon/home.png" class="menu-img" />
+            <ion-label class="menu-label">Home</ion-label>
+          </ion-item>
+         <ion-item lines="none" button routerLink="/apply-job" >
+          <img src="assets/icon/home.png" class="menu-img" />
+            <ion-label class="menu-label">Collect</ion-label>
+          </ion-item>
+         <ion-item lines="none" button routerDirection="root" (click)="openModal('complaints')">
+          <img src="assets/icon/report.png" class="menu-img" />
+            <ion-label class="menu-label">Reports</ion-label>
+          </ion-item>
+          <ion-item lines="none" button routerDirection="root" (click)="openModal('suggestion')">
+            <img src="assets/icon/home.png" class="menu-img" />
+            <ion-label class="menu-label">Sales</ion-label>
+          </ion-item>
+          <ion-item lines="none" button routerLink='/share'>
+            <img src="assets/icon/home.png" class="menu-img" />
+            <ion-label class="menu-label">Purchases</ion-label>
+          </ion-item>
+          <ion-item lines="none" button routerLink='/share'>
+            <img src="assets/icon/home.png" class="menu-img" />
+            <ion-label class="menu-label">PDC</ion-label>
+          </ion-item>
+          <ion-item lines="none" button routerDirection="root" (click)="openCapacitorSite()">
+            <img src="assets/icon/outbox.png" class="menu-img" />
+            <ion-label class="menu-label">Outbox</ion-label>
+          </ion-item>
+          <ion-item lines="none" button routerDirection="root" (click)="openCapacitorSite()">
+            <img src="assets/icon/notifications.png" class="menu-img" />
+            <ion-label class="menu-label">Notifications</ion-label>
+          </ion-item>
+          <ion-item lines="none" button routerDirection="root" (click)="openCapacitorSite()">
+            <img src="assets/icon/settings.png" class="menu-img" />
+            <ion-label class="menu-label">Settings</ion-label>
+          </ion-item>
+          <ion-item lines="none" button routerDirection="root" (click)="openCapacitorSite()">
+            <img src="assets/icon/manage-team.png" class="menu-img" />
+            <ion-label class="menu-label">Manage Team</ion-label>
+          </ion-item>
+          <ion-item lines="none" button routerDirection="root" (click)="openCapacitorSite()">
+            <img src="assets/icon/home.png" class="menu-img" />
+            <ion-label class="menu-label">Create Receipt</ion-label>
+          </ion-item>
+          
+          <ion-item lines="none" button (click)="onLogout()">
+            <img src="assets/icon/logout.png" class="menu-img" />
+            <ion-label class="menu-label">Logout</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="my-content"></ion-router-outlet>
+</ion-app>
